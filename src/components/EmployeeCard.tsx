@@ -9,7 +9,6 @@ interface EmployeeCardProps {
       picture: {
         medium: string;
       };
-      phone:number;
     };
   }
    
@@ -20,7 +19,7 @@ interface EmployeeCardProps {
         <img src={employee.picture.medium} alt={employee.name.first} />
         <figcaption>
           <strong>{employee.name.first} {employee.name.last}</strong>
-          {employee.email}{employee.phone}
+          {employee.email}
         </figcaption>
       </figure>
     );
